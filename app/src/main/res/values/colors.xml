@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="darkGray">#909090</color>
+    <color name="turquoiseGreen">#3BC193</color>
+    <color name="lightPeach">#FFF6DB</color>
+    <color name="brightYellow">#FFCE00</color>
+    <color name="hotPink">#FF79BF</color>
+    <color name="pinkBlush">#FFEDF6</color>
+    <color name="lightSkyBlue">#E4F0F8</color>
+    <color name="brightBlue">#64B6F1</color>
+    <color name="mintGreen">#D7F4EB</color>
+    <color name="tropicalGreen">#3BC193</color>
+</resources>

@@ -1,0 +1,192 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PlantPulse" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <!-- Gaya dasar untuk semua teks -->
+    <style name="BaseTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Gaya dasar untuk Regular -->
+    <style name="BaseTextStyle.Regular" parent="BaseTextStyle">
+        <item name="android:fontFamily">@font/orkney_regular</item>
+    </style>
+
+    <!-- Gaya dasar untuk Medium -->
+    <style name="BaseTextStyle.Medium" parent="BaseTextStyle">
+        <item name="android:fontFamily">@font/orkney_medium</item>
+    </style>
+
+    <!-- Gaya dasar untuk Bold -->
+    <style name="BaseTextStyle.Bold" parent="BaseTextStyle">
+        <item name="android:fontFamily">@font/orkney_bold</item>
+    </style>
+
+    <!-- Gaya teks untuk Regular -->
+    <style name="TextStyle.Regular.ExtraSmall.Black" parent="BaseTextStyle.Regular">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextStyle.Regular.ExtraSmall.DarkGray" parent="BaseTextStyle.Regular">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/darkGray</item>
+    </style>
+
+    <style name="TextStyle.Regular.Small.Black" parent="BaseTextStyle.Regular">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextStyle.Regular.Small.DarkGray" parent="BaseTextStyle.Regular">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/darkGray</item>
+    </style>
+
+    <style name="TextStyle.Regular.Medium.Black" parent="BaseTextStyle.Regular">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextStyle.Regular.Medium.DarkGray" parent="BaseTextStyle.Regular">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/darkGray</item>
+    </style>
+
+    <style name="TextStyle.Regular.Large.Black" parent="BaseTextStyle.Regular">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextStyle.Regular.Large.DarkGray" parent="BaseTextStyle.Regular">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/darkGray</item>
+    </style>
+
+    <style name="TextStyle.Regular.ExtraLarge.Black" parent="BaseTextStyle.Regular">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextStyle.Regular.ExtraLarge.DarkGray" parent="BaseTextStyle.Regular">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/darkGray</item>
+    </style>
+
+    <!-- Gaya teks untuk Medium -->
+    <style name="TextStyle.Medium.ExtraSmall.Black" parent="BaseTextStyle.Medium">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextStyle.Medium.ExtraSmall.DarkGray" parent="BaseTextStyle.Medium">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/darkGray</item>
+    </style>
+
+    <style name="TextStyle.Medium.Small.Black" parent="BaseTextStyle.Medium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextStyle.Medium.Small.DarkGray" parent="BaseTextStyle.Medium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/darkGray</item>
+    </style>
+
+    <style name="TextStyle.Medium.Medium.Black" parent="BaseTextStyle.Medium">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextStyle.Medium.Medium.DarkGray" parent="BaseTextStyle.Medium">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/darkGray</item>
+    </style>
+
+    <style name="TextStyle.Medium.Large.Black" parent="BaseTextStyle.Medium">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextStyle.Medium.Large.DarkGray" parent="BaseTextStyle.Medium">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/darkGray</item>
+    </style>
+
+    <style name="TextStyle.Medium.ExtraLarge.Black" parent="BaseTextStyle.Medium">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextStyle.Medium.ExtraLarge.DarkGray" parent="BaseTextStyle.Medium">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/darkGray</item>
+    </style>
+
+    <!-- Gaya teks untuk Bold -->
+    <style name="TextStyle.Bold.ExtraSmall.Black" parent="BaseTextStyle.Bold">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextStyle.Bold.ExtraSmall.DarkGray" parent="BaseTextStyle.Bold">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/darkGray</item>
+    </style>
+
+    <style name="TextStyle.Bold.Small.Black" parent="BaseTextStyle.Bold">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextStyle.Bold.Small.DarkGray" parent="BaseTextStyle.Bold">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/darkGray</item>
+    </style>
+
+    <style name="TextStyle.Bold.Medium.Black" parent="BaseTextStyle.Bold">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextStyle.Bold.Medium.DarkGray" parent="BaseTextStyle.Bold">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/darkGray</item>
+    </style>
+
+    <style name="TextStyle.Bold.Large.Black" parent="BaseTextStyle.Bold">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextStyle.Bold.Large.DarkGray" parent="BaseTextStyle.Bold">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/darkGray</item>
+    </style>
+
+    <style name="TextStyle.Bold.ExtraLarge.Black" parent="BaseTextStyle.Bold">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextStyle.Bold.ExtraLarge.DarkGray" parent="BaseTextStyle.Bold">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/darkGray</item>
+    </style>
+
+    <style name="SpecificCornerRounded">
+        <item name="cornerSizeTopRight">10dp</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerSizeBottomLeft">10dp</item>
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerSizeBottomRight">10dp</item>
+        <item name="cornerFamilyBottomRight">rounded</item>
+    </style>
+
+    <style name="Theme.PlantPulse" parent="Base.Theme.PlantPulse" />
+</resources>

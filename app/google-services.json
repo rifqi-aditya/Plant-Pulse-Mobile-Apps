@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "494592579344",
+    "firebase_url": "https://smart-plant-b96b5-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "smart-plant-b96b5",
+    "storage_bucket": "smart-plant-b96b5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:494592579344:android:286796023b9a7b57167795",
+        "android_client_info": {
+          "package_name": "com.rifqi.plantpulse"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs63JT_yFEFJwpW2S7MQE-wvymfV8z8gE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

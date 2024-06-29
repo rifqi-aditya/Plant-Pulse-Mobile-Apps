@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">PlantPulse</string>
+    <string name="humidity_text">Humidity: %1$.2f%%</string>
+    <string name="soil_moisture_text">Soil Moisture: %1$.2f%%</string>
+    <string name="temperature_text">Temperature: %1$.2f°C</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="you_will_have_experience_in_caring_for_plants_comfortably_without_having_to_worry_about_forgetting_your_plants">You will have experience in caring for plants comfortably without having to worry about forgetting your plants</string>
+    <string name="name">Name</string>
+    <string name="provide_your_personal_info">Provide your personal info</string>
+    <string name="personal_info">Personal Info</string>
+    <string name="app_icon">App Icon</string>
+    <string name="next_icon">Next icon</string>
+    <string name="second_onboarding_title">Hi Rifqi, we will arrange your plants well and provide information that suits your plants</string>
+    <string name="second_onboarding_sub_title">You will be invited to understand this application properly and correctly so that your plants become healthy</string>
+    <string name="get_started">Get Started</string>
+    <string name="home">Home</string>
+    <string name="strawberry">Strawberry</string>
+    <string name="healthy">HEALTHY</string>
+    <string name="back">Back</string>
+    <string name="sunlight">Sunlight</string>
+    <string name="temperature">Temperature</string>
+    <string name="_18">18°</string>
+    <string name="moisture">Moisture</string>
+    <string name="percentage">14%</string>
+    <string name="humidity">Humidity</string>
+</resources>
