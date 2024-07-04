@@ -1,8 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
+
     <!-- Base application theme. -->
     <style name="Base.Theme.PlantPulse" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">@android:color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowBackground">@color/white</item>
     </style>
 
     <!-- Gaya dasar untuk semua teks -->
@@ -182,6 +184,8 @@
     <style name="SpecificCornerRounded">
         <item name="cornerSizeTopRight">10dp</item>
         <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerSizeTopLeft">10dp</item>
+        <item name="cornerFamilyTopLeft">rounded</item>
         <item name="cornerSizeBottomLeft">10dp</item>
         <item name="cornerFamilyBottomLeft">rounded</item>
         <item name="cornerSizeBottomRight">10dp</item>
