@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
     android:paddingHorizontal="20dp"
     android:paddingVertical="30dp"
     tools:context=".ui.home.HomeFragment">
@@ -45,6 +44,7 @@
             android:text="Water reservoirs" />
 
         <TextView
+            android:id="@+id/tv_water_reservoirs_percentage"
             style="@style/TextStyle.Medium.Large.Black"
             android:layout_marginTop="20dp"
             android:text="100%" />

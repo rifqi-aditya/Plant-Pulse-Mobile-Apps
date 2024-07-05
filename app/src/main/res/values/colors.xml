@@ -13,4 +13,6 @@
     <color name="mintGreen">#D7F4EB</color>
     <color name="tropicalGreen">#3BC193</color>
     <color name="lightGrey">#EDEDED</color>
+    <color name="darkCharcoal">#323232</color>
+    <color name="dimGray">#494949</color>
 </resources>

@@ -1,33 +1,43 @@
 package com.rifqi.plantpulse.data.repository
 
 import android.content.Context
+import android.util.Log
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import com.google.firebase.firestore.FirebaseFirestore
 import com.rifqi.plantpulse.data.model.Sensor
-import kotlinx.coroutines.tasks.await
 
 class SensorRepository {
     private val firestore = FirebaseFirestore.getInstance()
+    private val sensorsCollection = firestore.collection("sensors")
 
-    suspend fun getSensors(): List<Sensor> {
-        val sensors = mutableListOf<Sensor>()
+    fun getSensors(): LiveData<List<Sensor>> {
+        val liveData = MutableLiveData<List<Sensor>>()
 
-        try {
-            val querySnapshot = firestore.collection("sensors").get().await()
-            for (document in querySnapshot.documents) {
-                val id = document.id
-                val humidity = document.getDouble("humidity")
-                val temperature = document.getDouble("temperature")
-                val percentage = document.getDouble("percentage")
-
-                val sensor = Sensor(id, humidity, temperature, percentage)
-                sensors.add(sensor)
+        sensorsCollection.addSnapshotListener { snapshot, exception ->
+            if (exception != null) {
+                Log.w(TAG, "Listen failed", exception)
+                return@addSnapshotListener
             }
-        } catch (e: Exception) {
-            // Handle exceptions
-            e.printStackTrace()
+
+            if (snapshot != null && !snapshot.isEmpty) {
+                val sensorsList = mutableListOf<Sensor>()
+                for (document in snapshot.documents) {
+                    val id = document.id
+                    val humidity = document.getDouble("humidity")
+                    val temperature = document.getDouble("temperature")
+                    val percentage = document.getDouble("percentage")
+
+                    val sensor = Sensor(id, humidity, temperature, percentage)
+                    sensorsList.add(sensor)
+                }
+                liveData.value = sensorsList
+            } else {
+                liveData.value = emptyList()
+            }
         }
 
-        return sensors
+        return liveData
     }
 
     companion object {

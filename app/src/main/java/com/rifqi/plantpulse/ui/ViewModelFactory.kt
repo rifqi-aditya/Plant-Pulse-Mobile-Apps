@@ -13,7 +13,7 @@ class ViewModelFactory(private val plantRespository: PlantRepository, private va
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         return when {
             modelClass.isAssignableFrom(HomeViewModel::class.java) -> {
-                HomeViewModel(plantRespository) as T
+                HomeViewModel(plantRespository, sensorRepository) as T
             }
             modelClass.isAssignableFrom(PlantViewModel::class.java) -> {
                 PlantViewModel(sensorRepository) as T

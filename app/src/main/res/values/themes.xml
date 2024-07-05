@@ -192,5 +192,7 @@
         <item name="cornerFamilyBottomRight">rounded</item>
     </style>
 
+    <color name="dynamicBorderColor">@color/lightGrey</color> <!-- Warna untuk mode terang -->
+
     <style name="Theme.PlantPulse" parent="Base.Theme.PlantPulse" />
 </resources>

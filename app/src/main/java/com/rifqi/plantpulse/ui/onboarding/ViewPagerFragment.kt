@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.rifqi.plantpulse.databinding.FragmentViewPagerBinding
 import com.rifqi.plantpulse.ui.onboarding.screens.FirstScreenFragment
-import com.rifqi.plantpulse.ui.onboarding.screens.SecondScreenFragment
 
 class ViewPagerFragment : Fragment() {
 
@@ -27,8 +26,7 @@ class ViewPagerFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val fragmentList = arrayListOf<Fragment>(
-            FirstScreenFragment(),
-            SecondScreenFragment()
+            FirstScreenFragment()
         )
         val adapter = ViewPagerAdapter(fragmentList, requireActivity().supportFragmentManager, lifecycle)
         binding.viewPager.adapter = adapter
