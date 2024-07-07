@@ -92,13 +92,6 @@
                 android:layout_marginStart="20dp"
                 android:background="@drawable/ic_circle_green" />
 
-            <View
-                android:id="@+id/dot6"
-                android:layout_width="16dp"
-                android:layout_height="16dp"
-                android:layout_marginStart="20dp"
-                android:background="@drawable/ic_circle_green" />
-
         </LinearLayout>
     </LinearLayout>
 

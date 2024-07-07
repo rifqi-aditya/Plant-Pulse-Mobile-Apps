@@ -1,17 +1,18 @@
 package com.rifqi.plantpulse
 
 import android.Manifest
-import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
+import androidx.work.PeriodicWorkRequestBuilder
+import androidx.work.WorkManager
+import androidx.work.WorkRequest
 import com.google.firebase.auth.FirebaseAuth
 import com.rifqi.plantpulse.databinding.ActivityMainBinding
-import com.rifqi.plantpulse.service.WaterReservoirService
+import java.util.concurrent.TimeUnit
 
 class MainActivity : AppCompatActivity() {
     private val binding by lazy {
@@ -37,7 +38,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         setupFirebaseAuth()
-        startWaterReservoirService()
+        scheduleWaterLevelWorker()
     }
 
     private fun setupFirebaseAuth() {
@@ -55,19 +56,14 @@ class MainActivity : AppCompatActivity() {
             }
     }
 
-    private fun startWaterReservoirService() {
-        val serviceIntent = Intent(this, WaterReservoirService::class.java)
-        ContextCompat.startForegroundService(this, serviceIntent)
-    }
+    private fun scheduleWaterLevelWorker() {
+        val workRequest: WorkRequest =
+            PeriodicWorkRequestBuilder<WaterLevelWorker>(15, TimeUnit.MINUTES)
+                .build()
 
-    override fun onDestroy() {
-        super.onDestroy()
-//        stopWaterReservoirService()
-    }
-
-    private fun stopWaterReservoirService() {
-        val serviceIntent = Intent(this, WaterReservoirService::class.java)
-        stopService(serviceIntent)
+        WorkManager
+            .getInstance(this)
+            .enqueue(workRequest)
     }
 
     companion object {
